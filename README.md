@@ -184,7 +184,9 @@ what the update system reports and compares against.
 A release without a version bump reaches nobody, so the script exists to
 make that hard to forget. It also refuses to move a version backwards.
 
-This theme has its own release track, separate from the parent's.
+This theme has its own release track in [Warden](https://github.com/momardia54/Warden), separate from the
+parent's — so a client site's own theme can be released without touching
+the parent, and vice versa.
 
 ![Both themes, tracked separately](docs/screenshots/licence-status.png)
 
