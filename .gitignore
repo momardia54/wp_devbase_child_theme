@@ -1,0 +1,18 @@
+# ---------------------------------------------------------------------------
+# Internal engineering notes — not published.
+#
+# AGENT.md files carry the design reasoning for whoever works on this next,
+# rather than for people using the theme.
+#
+# NOTE: excluding them means they are not version-controlled and not backed
+# up anywhere. If that matters, mirror them to a private repository.
+# ---------------------------------------------------------------------------
+AGENT.md
+
+# Build output
+*.zip
+
+# OS and editor cruft
+.DS_Store
+.vscode/
+.idea/

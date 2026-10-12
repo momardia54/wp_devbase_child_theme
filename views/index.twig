@@ -1,0 +1,55 @@
+{#
+  This client site's front end.
+
+  Timber resolves template names CHILD FIRST, then parent
+  (LocationManager searches [get_stylesheet_directory(), get_template_directory()]),
+  so this file automatically takes precedence over the parent theme's own
+  views/index.twig the moment it exists — no registration, no config.
+  Delete it and the parent's branded placeholder comes back.
+
+  The parent's index.php is what renders this (`Timber::render('index.twig', $context)`).
+  As the site grows, add views/single.twig, views/page.twig and friends here
+  and a matching single.php/page.php — WordPress's template hierarchy and
+  Timber's child-first lookup both work normally.
+
+  The four function() calls below are NOT optional:
+
+    wp_head()      — stylesheets, GTM/GA4, schema JSON-LD
+    wp_body_open() — GTM's <noscript> fallback
+    wp_footer()    — anything a plugin or future feature hooks there
+    body_class()   — real body classes for CSS/JS to hook
+
+  Several parent theme features output through exactly these hooks and
+  silently render nothing without them — the GTM <noscript> tag sat dead for
+  a long time in this codebase's history for precisely that reason. Keep all
+  four in any layout you build.
+
+  Asset URLs: theme.link is this child theme's directory. For something the
+  PARENT owns, use theme.uri instead (see the parent's views/AGENT.md).
+#}
+<!doctype html>
+<html {{ site.language_attributes }}>
+<head>
+	<meta charset="{{ site.charset }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{{ function('wp_head') }}
+</head>
+<body {{ function('body_class') }}>
+	{{ function('wp_body_open') }}
+
+	<main class="site-main">
+		<h1>{{ site.name }}</h1>
+
+		{% if post %}
+			<article>
+				<h2>{{ post.title }}</h2>
+				{{ post.content }}
+			</article>
+		{% else %}
+			<p>{{ site.description }}</p>
+		{% endif %}
+	</main>
+
+	{{ function('wp_footer') }}
+</body>
+</html>

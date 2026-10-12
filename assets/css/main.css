@@ -1,0 +1,24 @@
+/*
+ * This client site's styles.
+ *
+ * Enqueued from functions.php (versioned by file mtime, so a deploy busts
+ * the cache automatically). style.css in the theme root is NOT loaded —
+ * WordPress does not enqueue a child theme's style.css on its own, and
+ * this project keeps load order explicit rather than relying on that.
+ */
+
+:root {
+	--brand: #1e5eff;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+}
+
+.site-main {
+	max-width: 70rem;
+	margin: 0 auto;
+	padding: 2rem 1.5rem;
+}

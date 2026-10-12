@@ -1,0 +1,26 @@
+Dev Base Child Theme
+Copyright (C) Boostway
+
+This program is free software: you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the
+Free Software Foundation, either version 2 of the License, or (at your
+option) any later version.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+Public License for more details.
+
+Full license text: https://www.gnu.org/licenses/gpl-2.0.html
+
+--------------------------------------------------------------------------
+Why GPL
+--------------------------------------------------------------------------
+
+This theme is a child of the Dev Base Parent Theme, which bundles and loads
+GPLv2+ code (Secure Custom Fields and Admin Site Enhancements). A child
+theme is not a derivative work of its parent in every legal reading, but
+the two ship and run together as one system, and licensing them
+differently would create a conflict with no upside.
+
+This theme bundles no third-party code of its own.

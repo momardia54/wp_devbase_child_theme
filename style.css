@@ -1,0 +1,21 @@
+/*
+Theme Name: Dev Base Child Theme
+Template: wp_devbase_parent_theme
+Author: Boostway
+Author URI: https://boostway.dev
+Description: Starter child theme for a client site. Copy this alongside the base theme, rename it for the client, and build the site's design and client-specific code here — the base theme stays untouched and updatable.
+Version: 1.0.0
+Text Domain: devbase_child_theme
+License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*
+ * Deliberately empty.
+ *
+ * WordPress requires this file to exist and reads the header above to
+ * discover the theme, but it is NOT enqueued automatically for a child
+ * theme — nothing loads it unless something enqueues it. Put real styles
+ * in assets/css/ and enqueue them from inc/, so the cache-busting version
+ * and load order are explicit rather than implicit. See AGENT.md.
+ */
